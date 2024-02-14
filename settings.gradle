@@ -21,7 +21,10 @@ pluginManagement {
 }
 
 include("common")
+include("common-api")
 include("fabric")
+include("fabric-api")
 include("neoforge")
+include("neoforge-api")
 
 rootProject.name = "Multi-Mod Loader Template"
