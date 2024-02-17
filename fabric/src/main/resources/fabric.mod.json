@@ -17,7 +17,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.ayydan.multimodloadertemplate.api.fabric.ExampleModFabric"
+      "me.ayydan.multimodloadertemplate.fabric.ExampleModFabric"
     ]
   },
   "mixins": [
