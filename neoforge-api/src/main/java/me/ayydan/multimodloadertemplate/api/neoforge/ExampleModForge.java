@@ -1,6 +1,6 @@
-package me.ayydan.multimodloadertemplate.neoforge;
+package me.ayydan.multimodloadertemplate.api.neoforge;
 
-import me.ayydan.multimodloadertemplate.CommonModEntryPoint;
+import me.ayydan.multimodloadertemplate.api.CommonModEntryPoint;
 import net.neoforged.fml.common.Mod;
 
 @Mod(CommonModEntryPoint.MOD_ID)

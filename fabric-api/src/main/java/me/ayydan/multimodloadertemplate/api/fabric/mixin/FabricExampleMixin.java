@@ -1,4 +1,4 @@
-package me.ayydan.multimodloadertemplate.fabric.mixin;
+package me.ayydan.multimodloadertemplate.api.fabric.mixin;
 
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,6 +12,6 @@ public class FabricExampleMixin
     @Inject(method = "init", at = @At("HEAD"))
     private void init(CallbackInfo ci)
     {
-        System.out.println("Hello from the Fabric example mixin!");
+        System.out.println("Hello from the Fabric Api example mixin!");
     }
 }

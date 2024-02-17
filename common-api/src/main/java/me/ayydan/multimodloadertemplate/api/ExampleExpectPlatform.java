@@ -1,4 +1,4 @@
-package me.ayydan.multimodloadertemplate;
+package me.ayydan.multimodloadertemplate.api;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import dev.architectury.platform.Platform;
@@ -14,7 +14,7 @@ public class ExampleExpectPlatform
      * platform sub-package, with its class suffixed with {@code Impl}.
      * <p>
      * Example:
-     * Expect: me.ayydan.multimodloadertemplate.ExampleExpectPlatform#getConfigDirectory()
+     * Expect: me.ayydan.multimodloadertemplate.api.ExampleExpectPlatform#getConfigDirectory()
      * Actual Fabric: me.ayydan.multimodloadertemplate.fabric.ExampleExpectPlatformImpl#getConfigDirectory()
      * Actual NeoForge: me.ayydan.multimodloadertemplate.neoforge.ExampleExpectPlatformImpl#getConfigDirectory()
      * <p>

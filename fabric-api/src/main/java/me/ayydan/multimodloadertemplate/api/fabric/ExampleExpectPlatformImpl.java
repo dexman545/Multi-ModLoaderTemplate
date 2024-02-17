@@ -1,7 +1,7 @@
-package me.ayydan.multimodloadertemplate.neoforge;
+package me.ayydan.multimodloadertemplate.api.fabric;
 
-import me.ayydan.multimodloadertemplate.ExampleExpectPlatform;
-import net.neoforged.fml.loading.FMLPaths;
+import me.ayydan.multimodloadertemplate.api.ExampleExpectPlatform;
+import net.fabricmc.loader.api.FabricLoader;
 
 import java.nio.file.Path;
 
@@ -12,6 +12,6 @@ public class ExampleExpectPlatformImpl
      */
     public static Path getConfigDirectory()
     {
-        return FMLPaths.CONFIGDIR.get();
+        return FabricLoader.getInstance().getConfigDir();
     }
 }

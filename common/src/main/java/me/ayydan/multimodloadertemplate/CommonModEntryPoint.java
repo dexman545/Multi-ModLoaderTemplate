@@ -1,5 +1,7 @@
 package me.ayydan.multimodloadertemplate;
 
+import me.ayydan.multimodloadertemplate.api.ExampleExpectPlatform;
+
 public class CommonModEntryPoint
 {
     public static final String MOD_ID = "multimodloadertemplate";

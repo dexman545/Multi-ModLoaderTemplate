@@ -48,11 +48,11 @@ subprojects {
                 "neoforge_version_range": rootProject.neoforge_version_range
         ]
 
-        /*if (project.name.contains('-api')) {
-            expandProps['id'] = rootProject.mod_id + '_api'
-            expandProps['name'] = rootProject.mod_name + '-api'
+        if (project.name.contains('-api')) {
+            expandProps['id'] = rootProject.mod_id + '-api'
+            expandProps['name'] = rootProject.mod_name + ' API'
             expandProps['version'] = rootProject.mod_api_version
-        }*/
+        }
 
         filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', '*.mixins.json']) {
             expand expandProps
