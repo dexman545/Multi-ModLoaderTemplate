@@ -1,5 +1,6 @@
 package me.ayydan.multimodloadertemplate.api.neoforge.mixin;
 
+import me.ayydan.multimodloadertemplate.api.CommonModApiEntryPoint;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,6 +13,6 @@ public class NeoForgeExampleMixin
     @Inject(method = "init", at = @At("HEAD"))
     private void init(CallbackInfo ci)
     {
-        System.out.println("Hello from the NeoForge Api example mixin!");
+        CommonModApiEntryPoint.LOGGER.info("Hello from the NeoForge Api example mixin!");
     }
 }

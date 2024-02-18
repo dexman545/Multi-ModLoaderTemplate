@@ -19,6 +19,9 @@ subprojects {
 
         // The template comes with Mojang mappings but, you may use other mappings such as Yarn and Quilt if you want.
         mappings loom.officialMojangMappings()
+
+        implementation 'com.google.auto.service:auto-service:1.1.1'
+        annotationProcessor 'com.google.auto.service:auto-service:1.1.1'
     }
 
     repositories {

@@ -1,5 +1,6 @@
 package me.ayydan.multimodloadertemplate.fabric.mixin;
 
+import me.ayydan.multimodloadertemplate.CommonModEntryPoint;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,6 +13,6 @@ public class FabricExampleMixin
     @Inject(method = "init", at = @At("HEAD"))
     private void init(CallbackInfo ci)
     {
-        System.out.println("Hello from the Fabric example mixin!");
+        CommonModEntryPoint.LOGGER.info("Hello from the Fabric example mixin!");
     }
 }
