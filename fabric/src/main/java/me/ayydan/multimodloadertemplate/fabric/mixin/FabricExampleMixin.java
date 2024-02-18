@@ -8,11 +8,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
-public class FabricExampleMixin
-{
+public class FabricExampleMixin {
     @Inject(method = "init", at = @At("HEAD"))
-    private void init(CallbackInfo ci)
-    {
+    private void init(CallbackInfo ci) {
         CommonModEntryPoint.LOGGER.info("Hello from the Fabric example mixin!");
     }
 }
