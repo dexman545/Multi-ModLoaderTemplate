@@ -6,7 +6,8 @@ import org.slf4j.LoggerFactory;
 
 public class CommonModApiEntryPoint
 {
-    public static final String MOD_ID = "multimodloadertemplate-api";
+    // Neo restricts mod ID to only allow lowercase alphanumeric
+    public static final String MOD_ID = "multimodloadertemplateapi";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static void init()
